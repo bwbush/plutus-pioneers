@@ -1,0 +1,6 @@
+tmp/
+*.tmp
+*.log
+*.sw?
+plutus/
+plutus-pioneer-program/
