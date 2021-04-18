@@ -8,7 +8,7 @@ let
 
   inherit (packages) pkgs;
 
-  ghc = packages.plutus.haskell.project.ghcWithPackages (ps: with ps; [
+  ghc = packages.plutus.haskell.project.ghcWithHoogle (ps: with ps; [
     marlowe-playground-server
     plutus-playground-server
   ]);
