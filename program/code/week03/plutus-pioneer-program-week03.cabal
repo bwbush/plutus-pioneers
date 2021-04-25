@@ -1,0 +1,48 @@
+Cabal-Version:      2.4
+Name:               plutus-pioneer-program-week03
+Version:            0.1.0.0
+Author:              Lars Bruenjes
+Maintainer:          brunjlar@gmail.com
+Build-Type:          Simple
+Copyright:           © 2021 Lars Bruenjes
+License:             Apache-2.0
+License-files:       LICENSE
+
+executable homework
+  main-is         : Main.hs
+  other-modules   : Week03.Vesting
+  build-depends   : base >= 4.14 && < 4.15
+                  , aeson
+                  , containers
+                  , playground-common
+                  , plutus-contract
+                  , plutus-ledger
+                  , plutus-ledger-api
+                  , plutus-pioneer-program-week03
+                  , plutus-tx
+                  , plutus-tx-plugin
+                  , text
+  other-extensions:
+  hs-source-dirs  : src
+  default-language: Haskell2010
+  ghc-options:         -Wall -fobject-code -fno-ignore-interface-pragmas -fno-omit-interface-pragmas -fno-strictness -fno-spec-constr -fno-specialise
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Week03.IsData
+                     , Week03.Homework1
+                     , Week03.Homework2
+                     , Week03.Parameterized
+                     , Week03.Vesting
+  build-depends:       aeson
+                     , base ^>=4.14.1.0
+                     , containers
+                     , playground-common
+                     , plutus-contract
+                     , plutus-ledger
+                     , plutus-ledger-api
+                     , plutus-tx-plugin
+                     , plutus-tx
+                     , text
+  default-language:    Haskell2010
+  ghc-options:         -Wall -fobject-code -fno-ignore-interface-pragmas -fno-omit-interface-pragmas -fno-strictness -fno-spec-constr -fno-specialise
